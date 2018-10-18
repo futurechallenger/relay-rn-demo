@@ -1,0 +1,30 @@
+{
+  "name": "RelayDemo",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "relay": "relay-compiler --src ./js --schema schema.graphql",
+    "ios": "react-native run-ios",
+    "android": "react-native run-android"
+  },
+  "dependencies": {
+    "react": "16.6.0-alpha.8af6728",
+    "react-native": "0.57.3",
+    "react-navigation": "^2.18.0",
+    "react-relay": "^1.6.2"
+  },
+  "devDependencies": {
+    "babel-jest": "23.6.0",
+    "babel-plugin-relay": "^1.6.2",
+    "graphql": "^14.0.2",
+    "jest": "23.6.0",
+    "metro-react-native-babel-preset": "0.48.1",
+    "react-test-renderer": "16.6.0-alpha.8af6728",
+    "relay-compiler": "^1.6.2"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
